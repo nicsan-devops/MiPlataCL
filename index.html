@@ -29,10 +29,11 @@
   </head>
   <body>
     <h1>Política de privacidad — MiPlataCL</h1>
-    <p>Última actualización: 15 de octubre de 2026</p>
+    <p>Última actualización: 27 de octubre de 2026</p>
     <h2>Resumen</h2>
     <p>
-      MiPlataCL guarda tu información <strong>solo en tu iPhone</strong>. No
+      MiPlataCL guarda tu información <strong>solo en tu iPhone</strong>, salvo
+      que actives el respaldo automático en tu propio iCloud (ver abajo). No
       tiene servidor, no pide crear una cuenta en la nube y no envía tus datos a
       nadie. Las únicas conexiones a internet son consultas públicas de valores:
       el dólar y la UF (mindicador.cl, una vez al día) y, cuando armas una
@@ -132,17 +133,41 @@
     <h2>Respaldos y mensajes</h2>
     <ul>
       <li>
-        <strong>Exportar respaldo:</strong> genera un archivo con tus datos
-        financieros. Tú decides dónde guardarlo o con quién compartirlo.
-        Guárdalo en un lugar seguro: quien tenga el archivo puede leerlo.
+        <strong>Exportar respaldo:</strong> genera un archivo cifrado con tus
+        datos financieros (con la misma clave del Llavero de iCloud que el
+        respaldo automático). Tú decides dónde guardarlo o con quién
+        compartirlo. También puedes exportarlo <strong>sin cifrar</strong> para
+        revisarlo en un computador: quien tenga ese archivo puede leerlo, así
+        que guárdalo en un lugar seguro.
       </li>
       <li>
-        <strong>Respaldo automático (opcional):</strong> si lo activas, eliges
-        una carpeta de iCloud Drive, Google Drive o Dropbox y la app deja ahí un
-        archivo con todos tus datos financieros cada vez que sales de ella.
-        <strong>El archivo no va cifrado</strong>: queda sujeto a la seguridad
-        de la cuenta y la política del servicio que elegiste. El desarrollador
-        no recibe ese archivo. Puedes apagarlo cuando quieras.
+        <strong>Respaldo automático (opcional):</strong> si lo activas, la app
+        deja un archivo con todos tus datos financieros cada vez que sales de
+        ella, en uno de dos lugares que tú eliges:
+        <ul>
+          <li>
+            <strong>Tu iCloud Drive</strong> (carpeta «MiPlataCL», se ve en la
+            app Archivos): el archivo queda en tu cuenta de Apple y lo protege
+            la seguridad de iCloud. Apple lo guarda cifrado; solo queda cifrado
+            de punta a punta (ni Apple puede leerlo) si activas la «Protección
+            avanzada de datos» de iCloud. Sirve para restaurar tus datos en otro
+            iPhone con la misma cuenta de Apple (Ajustes → Respaldo → «Restaurar
+            desde iCloud»).
+          </li>
+          <li>
+            <strong>Una carpeta de otra nube</strong> (Google Drive, Dropbox u
+            otra): el archivo queda sujeto a la seguridad de la cuenta y la
+            política del servicio que elegiste.
+          </li>
+        </ul>
+        <strong>El archivo va cifrado</strong> (AES-256) con una clave que crea
+        la app y guarda en tu Llavero de iCloud: nadie que no tenga tu cuenta de
+        Apple puede abrirlo, ni el servicio donde lo guardes ni el
+        desarrollador. Para restaurarlo en otro iPhone, ese iPhone debe tener tu
+        misma cuenta de Apple con el Llavero de iCloud encendido. Si el Llavero
+        no está disponible, el archivo se guarda sin cifrar. En ambos casos el
+        desarrollador no recibe ni puede ver ese archivo. Puedes apagarlo cuando
+        quieras.
       </li>
       <li>
         <strong>Cobros:</strong> la app prepara el texto de un mensaje, pero
@@ -157,7 +182,10 @@
     <h2>Conservación y eliminación</h2>
     <p>
       Tus datos permanecen en tu teléfono hasta que los borres. Al
-      <strong>desinstalar la app</strong> se elimina la base de datos. Las
+      <strong>desinstalar la app</strong> se elimina la base de datos, pero
+      <strong>no</strong> el respaldo automático: el de iCloud lo borras en
+      Archivos → iCloud Drive → MiPlataCL o en Ajustes del iPhone → tu nombre →
+      iCloud → Administrar almacenamiento; el de otra nube, en esa carpeta. Las
       copias de seguridad de iCloud o de tu computador que haga iOS siguen las
       reglas de Apple y de tus ajustes. Los archivos que hayas exportado debes
       borrarlos tú.
